@@ -1,0 +1,342 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    color: #333333;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.nav {
+    height: 4rem;
+    background-color:#8c278e;
+    border-bottom: 1px solid #000;
+}
+
+.nav-container {
+    width: 100%;
+    height: 4rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    margin-top: .5rem;
+}
+.nav-logo {
+    height: 4rem;
+    display: inline-flex;
+    margin-left: 1rem;
+}
+
+.nav-logo .logo-img{
+    margin: .3rem 0;
+}
+.nav-logo .logo-text{
+    font-size:  .95rem;
+    color: #ffffff;
+    margin-left: .4rem;
+    display: inline-block;
+    line-height: 4rem;
+}
+.menu-icon .fa-bars {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 1rem;
+}
+
+.menu-icon .fa-bars:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+/* footer section style */
+
+.footer-container {
+    width: 70%;
+    height: 1.7rem;
+    background-color:#8c278e;
+    position: fixed;
+    bottom: 0;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: .3rem;
+    color: #ffffff;
+    font-size: .9rem;
+}
+
+.footer-link-wrapper {
+    display: flex;
+    align-items: center;
+}
+.footer-logos {
+    height: 1.2rem;
+    margin-left: .3rem;
+}
+
+.footer-logos .sp{
+    margin-left: .4rem;
+}
+
+/* main section style */
+
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 2rem 8rem;
+}
+
+.job-post-section {
+    width: 40rem;
+    flex: 1 0 0;
+    padding: .5rem;
+}
+
+.login-section {
+    width: 40rem;
+    flex: 1 0 0;
+    padding: 1rem;
+}
+
+.job-post-section .title-welcom{
+    font-size: 2.4rem;
+    font-weight: 100;
+    color: #999;
+}
+
+.hr-line {
+    width: 100%;
+    border-bottom: 1px solid rgb(240, 233, 233);
+}
+.hr1 {
+    margin: 2rem 0;
+}
+.hr2 {
+    margin-bottom: 2rem;
+}
+.search-title {
+    padding: .1rem 0;
+    border-bottom: .4rem solid #c5b358;
+    background-color:#8c278e;
+}
+.search-title .search-text {
+    font-style: italic;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 1.4rem;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.search-box .box-text {
+    flex: 1 0 0;
+}
+
+.search-box .input-box {
+    flex: 2 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+input {
+    padding: .3rem 1.2rem;
+    font-size: 1rem;
+    line-height: 1.428571429;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: .1rem solid rgba(211, 50, 175, 0.5);
+    border-radius: .3rem;
+    transition: border-color ease-in-out 0.3s;
+    margin-left: 1rem;
+    flex: 3 3 0;
+}
+
+input:focus {
+    outline: none;
+    border-color: #8c278e;
+}
+
+.search-box .input-box button {
+    background-color: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(0, 0, 0, .9);
+    color: #c5b358;
+    padding: .6rem 1rem;
+    border-radius: .2rem;
+    margin-left: 1rem;
+    flex: 1 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.job-display-section {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-display-section .no-job-text {
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 1rem 0;
+    color: #999;
+}
+
+.job-buttons {
+    padding: .6rem 0;
+}
+
+.job-buttons .info-button {
+    color:#8c278e;
+    background-color: #ffffff;
+    border: 2px solid #8c278e;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    font-weight: 600;
+}
+.job-buttons .mg{
+    margin-left: 1rem;
+}
+.job-buttons .info-button a {
+    color:#8c278e;
+}
+
+
+/* login section style */
+
+.login-section .login-box {
+    border: 3px solid #8c278e;
+    border-radius: .3rem;
+    position: relative;
+}
+
+.login-section .login-title {
+    width: 100%;
+    color: #ffffff;
+    background-color: #8c278e;
+    padding: 0 1rem;
+}
+
+.first-time-text {
+    padding: 1rem .1rem;
+}
+
+.first-time-text p{
+    background-color: rgb(214, 209, 209);
+    border-radius: .2rem;
+    padding: .2rem .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0 .2rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.common-button button {
+    background-color: #8c278e;
+    color: #ffffff;
+    border: none;
+    padding: .2rem .5rem;
+    border-radius: .2rem;
+    margin: 0 .2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.reg-button button .fa {
+    color: #000;
+}
+
+.login-input .input-box {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem .2rem;
+}
+
+.login-input .input-box  h2 {
+    flex: 1 0 0;
+}
+
+.login-input .input-box  label {
+    flex: 4 0 0;
+}
+
+.login-input .input-box  label .fa {
+    padding: .7rem 1.2rem;
+    background-color: rgb(238, 233, 233);
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+    border: 2px solid rgb(220, 215, 215);
+}
+
+.login-input .input-box  input {
+   font-size: 1rem;
+   border-radius: unset;
+   border-top-right-radius: .2rem;
+   border-bottom-right-radius: .2rem;
+   margin-left: -.4rem;
+}
+
+.login-input .box-3 label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.login-input .box-3 label input{
+    margin-left: .3rem;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem 0;
+}
+
+.login-button button {
+    padding: .4rem .8rem;
+    background-color: #8c278e;
+}
+
+.forget-link {
+    margin: 1rem .2rem;
+    font-size: .8rem;
+}
+
+.forget-link a{
+    color: #8c278e;
+}
